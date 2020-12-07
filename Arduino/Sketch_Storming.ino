@@ -36,8 +36,8 @@ bool led_state = false;
 int16_t AcX, AcY, AcZ, Tmp, GyX, GyY, GyZ; 
 
 //Definições da rede Wifi
-const char* SSID = "Sollie iPhone";
-const char* PASSWORD = "12345678";
+const char* SSID = "YOUR WIFI NAME";
+const char* PASSWORD = "YOUR WIFI PASSWORD";
 
 //endereço IP local do Servidor Web instalado na Raspberry Pi 3
 //onde será exibida a página web
@@ -443,7 +443,7 @@ void loop() {
 }
 
 void side_lateral_raise() {
-  if (time_val < 26.0 && num_exercise == 1 && force_scale >= 10) {
+  if (time_val < 26.0 && num_exercise == 1 && force_scale >= 120) {
     if ((GyX >= 80.0) && (GyX <= 120.0) || ((GyX >= -120.0) && (GyX <= -80.0)))  //gX 조건.
       if ((GyZ >= -25.0) && (GyZ <= 0.0) || (GyZ >= 0.0) && (GyZ <= 25.0)) //gZ조건.
         if ((GyY >= -25.0) && (GyY <= 0.0) || (GyY >= 0.0) && (GyY <= 25.0)) { //gY조건.
@@ -477,7 +477,7 @@ void side_lateral_raise() {
 }
 
 void push_up() {
-  if (time_val < 26.0 && num_exercise == 2 && force_scale >= 10) {
+  if (time_val < 26.0 && num_exercise == 2 && force_scale >= 120) {
     if ((GyX >= 75.0) && (GyX <= 125.0) || ((GyX >= -125.0) && (GyX <= -75.0)))  //GyX 조건.
       if ((GyY >= -25.0) && (GyY <= 0.0) || (GyY >= 0.0) && (GyY <= 25.0)) //gY조건.
         if ((GyZ >= -25.0) && (GyZ <= 0.0) || (GyZ >= 0.0) && (GyZ <= 25.0)) { //gZ조건.
@@ -511,7 +511,7 @@ void push_up() {
 }
 
 void dead_lift() {
-  if (time_val < 60.0 && num_exercise == 3 && force_scale >= 10) {
+  if (time_val < 60.0 && num_exercise == 3 && force_scale >= 120) {
     delay(1000);
     
     if ((GyX >= -20.0) && (GyX <= 0.0) || ((GyX >= 0.0) && (GyX <= 20.0)))  //gX 조건.
