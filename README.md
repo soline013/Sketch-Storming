@@ -19,7 +19,7 @@ Ardunio IDE을 이용한 프로그래밍과 하드웨어 회로 구성, 시제�
 
 * * *
 
-YYYY/MM/DD.md → 날짜 별 진행 상황을 정리한 파일.
+YYYY/MM/DD.md → 날짜별 진행 상황을 정리한 파일.
 
 Sketch_Storming.ino → 최종 Arduino 파일.
 
