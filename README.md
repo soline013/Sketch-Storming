@@ -1,4 +1,4 @@
-# Sketch_Storming.
+# Sketch-Storming.
 **Soongsil University Software Team Project.**
 
 *  * *
